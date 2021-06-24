@@ -1,0 +1,63 @@
+// === Отступы ===
+
+$space-grid: 30px;
+
+$grid-length: 10,9,8,7,6,5,4,3,2,1;
+
+$windowSizes: ( xl:1024px, lg:960px, md: 750px, sm:540px,  s:400px);
+
+.grid-item {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: calc(100% / var(--grid-size));
+    padding: 0 calc(var(--grid-space) / 2);
+    margin-bottom: var(--grid-space);
+}
+
+@each $grid in $grid-length {
+    .grid-#{$grid} {
+        display: flex;
+        flex-wrap: wrap;
+        width: auto;
+        margin: 0 calc(calc(var(--grid-space) / 2) - calc((var(--grid-space) / 2) * 2));
+
+        @if $grid==1 {
+            margin-right: 0;
+            margin-left: 0;
+        }
+    }
+}
+
+@each $grid in $grid-length {
+    .grid-#{$grid} {
+        --grid-size: #{$grid};
+    }
+}
+
+@each $SizeName,$WindowSize in $windowSizes {
+    @media only screen and (max-width: $WindowSize) {
+        @each $grid in $grid-length {
+            .grid-#{$SizeName}-#{$grid} {
+                --grid-size: #{$grid};
+
+                @if $grid==1 {
+                    margin-right: 0;
+                    margin-left: 0;
+
+                    .grid-item {
+                        padding-right: 0;
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.grid-box {
+    width: 100%;
+    overflow: hidden;
+}

@@ -1,0 +1,1357 @@
+@media (max-width: 1750px) {
+  .disadvantages-obesity {
+    &__decor {
+      &_2 {
+        left: -15vw;
+      }
+
+      &_5 {
+        right: -20vw;
+      }
+    }
+  }
+}
+
+@media (max-width: 1370px) {
+  .structure-prod-box {
+    transform: translateX(-3vw);
+  }
+}
+
+@media (max-width: 1330px) {
+  .disadvantages-obesity {
+    &__decor {
+      display: none;
+    }
+  }
+
+  .cause-obesity {
+    &__decor {
+      display: none;
+    }
+
+    &-item {
+      &_1,
+      &_2,
+      &_3,
+      &_4,
+      &_5,
+      &_6 {
+        transform: translateX(0);
+      }
+    }
+  }
+
+  .reviews {
+    &-swiper {
+      &-button {
+        &-next {
+          right: 0;
+        }
+
+        &-prev {
+          left: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1250px) {
+  .structure-prod {
+    padding: 90px 0 60px;
+
+    &__decor {
+      display: none;
+    }
+
+    &-box {
+      width: 1000px;
+      margin: 0 auto;
+      transform: translateX(0);
+    }
+
+    &-item {
+      &-info,
+      &::before {
+        display: none;
+      }
+
+      &__element {
+        transition: .2s linear;
+
+        &.active {
+          color: var(--color-5);
+        }
+      }
+
+      &_1 {
+        left: 200px;
+        top: 325px;
+      }
+  
+      &_2 {
+        left: 385px;
+        top: 192px;
+      }
+  
+      &_3 {
+        right: 288px;
+        top: 55px;
+      }
+  
+      &_4 {
+        right: 210px;
+        top: 180px;
+      }
+  
+      &_5 {
+        right: 235px;
+        top: 385px;
+      }
+  
+      &_6 {
+        left: 445px;
+        bottom: 50px;
+      }
+  
+      &_7 {
+        left: 390px;
+        bottom: 280px;
+      }
+    }
+
+    &-slider {
+      position: relative;
+      display: block;
+      padding-top: 50px;
+
+      .structure-prod-item {
+        &-info {
+          position: relative;
+          display: block;
+          margin: 0 auto;
+          cursor: pointer;
+        }
+      }
+
+      .swiper-container {
+        margin-bottom: 30px;
+      }
+
+      &__decor {
+        position: absolute;
+        top: 40%;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        transform: translateY(-50%);
+        z-index: 2;
+
+        &_animated {
+          @keyframes swipe {
+            0% {
+              transform: translateX(0);
+              opacity: 1;
+            }
+
+            80% {
+              transform: translateX(-70px);
+              opacity: 0;
+            }
+
+            100% {
+              transform: translateX(0);
+              opacity: 0;
+            }
+          }
+          
+          .img {
+            animation: swipe 1.5s ease-in infinite;
+          }
+        }
+      }
+    }
+  }
+
+  .pluses-prod {
+    padding-bottom: 90px;
+
+    &__title {
+      margin-bottom: 130px;
+    }
+
+    &-box {
+      &-item {
+        &__text {
+          border-radius: 20px;
+          padding: 10px 15px;
+          background: rgba(41, 157, 219, 0.6)
+        }
+      }
+    }
+  }
+
+  .method-application {
+    &__decor {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .cause-obesity {
+    &-box {
+      flex-wrap: wrap;
+
+      &__item {
+        margin-bottom: 0;
+
+        &_1,
+        &_3 {
+          width: 100%;
+          order: 1;
+          padding: 0;
+        }
+
+        &_2 {
+          height: 713px;
+          margin-bottom: 50px;
+        }
+      }
+
+      &__decor {
+        top: 330px;
+      }
+    }
+
+    &-item {
+      margin-bottom: 20px;
+
+      &_1,
+      &_2,
+      &_3 {
+        .cause-obesity-item__number {
+          order: -1;
+        }
+
+        .cause-obesity-item__text {
+          margin-right: 0;
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+
+  .pluses-prod {
+    background-position: 60% bottom;
+    &__title {
+      margin-bottom: 50px;
+    }
+
+    &-box {
+      flex-direction: column;
+
+      &-item {
+        width: 100%;
+  
+        &_2 {
+          order: -1;
+          margin-right: 0;
+          max-width: 500px;
+          margin: 0 auto 50px;
+          padding-left: 0;
+        }
+
+        &__text {
+          --fs-text-ml: 16px;
+
+          background: transparent;
+          padding: 0;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --fs-title-xl: 70px;
+    --fs-title-lm: 60px;
+    --fs-title-lg: 50px;
+    --fs-title-sm: 27px;
+  }
+
+  .product-info {
+    &-top {
+      .quality-info {
+        margin: 0 auto;
+        justify-content: center;
+      }
+
+      &__item {
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+
+        &:last-child {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+
+    &-title {
+      &-box {
+        margin-bottom: 30px;
+      }
+    }
+
+    &__title {
+      justify-content: center;
+    }
+
+    &__subtitle {
+      margin: 0 auto;
+      max-width: 488px;
+      width: 100%;
+      text-align: center;
+    }
+
+    &-box {
+      flex-direction: column;
+
+      &__item {
+        &:first-child,
+        &:last-child {
+          width: 100%;
+        }
+
+        &:first-child {
+          max-width: 665px;
+          margin-left: auto;
+          margin-right: auto;
+
+          .form-box {
+            margin-right: auto;
+            margin-left: auto;
+          }
+        }
+
+        &:last-child {
+          order: -1;
+          margin-bottom: 60px;
+
+          .img-box {
+            display: flex;
+            justify-content: center;
+            max-width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+          }
+        }
+      }
+    }
+
+    &__decor {
+      &_1 {
+        top: 7%;
+        left: -45px;
+        right: auto;
+        bottom: auto;
+        max-width: 157px;
+      }
+
+      &_2 {
+        top: 17%;
+        max-width: 350px;
+        right: -150px;
+      }
+
+      &_3 {
+        display: none;
+      }
+    }
+  }
+
+  .disadvantages-obesity {
+    &__title,
+    &__subtitle {
+      max-width: 565px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &-box {
+      &__img {
+        display: none;
+      }
+
+      &__flex {
+        padding-bottom: 120px;
+      }
+
+      &-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        max-width: 565px;
+        margin-left: auto;
+        margin-right: auto;
+
+        &__mobile,
+        &__text {
+          width: calc(50% - 7.5px);
+        }
+
+        &__mobile {
+          display: block;
+          margin-right: 15px;
+
+          .img {
+            max-width: 250px;
+            width: 100%;
+          }
+        }
+
+        &:nth-child(2n) {
+          .disadvantages-obesity-box-item__text {
+            margin-left: 0;
+            text-align: right;
+          }
+
+          .disadvantages-obesity-box-item__mobile {
+            margin-left: 15px;
+            margin-right: 0;
+          }
+        }
+
+        &:first-child,
+        &:nth-child(2) {
+          height: auto;
+        }
+      }
+    }
+  }
+
+  .benefit-prod {
+    &__title,
+    &__subtitle {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &-list {
+      &-box {
+        &__title {
+          max-width: 470px;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: center;
+        }
+      }
+    }
+
+    &__subtitle {
+      text-align: center;
+    }
+    
+    &-box {
+      flex-direction: column;
+
+      &-item {
+        &__img {
+          display: flex;
+          justify-content: center;
+          transform: translateY(0);
+        }
+
+        &__title {
+          justify-content: center;
+        }
+      }
+    }
+
+    &-item {
+      width: 100%;
+
+      &:first-child {
+        margin-bottom: 50px;
+        margin-right: 0;
+      }
+    }
+  }
+
+  .authoritative-opinion {
+    position: relative;
+    padding-bottom: 60px;
+
+    &-box {
+      padding-top: 90px;
+      flex-direction: column;
+    }
+
+    &__title {
+      position: absolute;
+      top: 45px;
+      text-align: center;
+      padding: 0 15px;
+      left: 0;
+      right: 0;
+    }
+
+    &-item {
+      &_1 {
+        width: 100%;
+        max-width: 450px;
+        margin: 0 auto 35px;
+
+        .img-box {
+          position: relative;
+        }
+      }
+
+      &_2 {
+        padding-left: 0;
+        width: calc(100% - 90px);
+        margin: 0 auto;
+      }
+    }
+
+    &__prod-name {
+      justify-content: center;
+    }
+
+    &__postscript {
+      display: block;
+      max-width: 420px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .method-application {
+    padding-top: 60px;
+    &__decor {
+      display: none;
+    }
+
+    &__title {
+      text-align: center;
+    }
+
+    &-box {
+      flex-direction: column;
+    }
+
+    &-list {
+      background: transparent;
+
+      &__item {
+        text-align: center;
+      }
+     
+      span {
+        color: var(--color-1);
+      }
+    }
+
+    &-item {
+      &_1 {
+        order: 1;
+        max-width: 500px;
+      }
+
+      &_2 {
+        margin-bottom: 50px;
+      }
+
+      &__decor {
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+
+  .advantages {
+    &-box {
+      margin-bottom: 50px;
+
+      &__text {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1014px) {
+  .structure-prod {
+    &-box {
+      width: 500px;
+    }
+
+    &-item {
+      &_1 {
+        left: 0;
+        top: 255px;
+      }
+  
+      &_2 {
+        left: 150px;
+        top: 148px;
+      }
+  
+      &_3 {
+        right: 68px;
+        top: 37px;
+      }
+  
+      &_4 {
+        right: 10px;
+        top: 140px;
+      }
+  
+      &_5 {
+        right: 30px;
+        top: 300px;
+      }
+  
+      &_6 {
+        left: 195px;
+        bottom: 33px;
+      }
+  
+      &_7 {
+        left: 150px;
+        bottom: 220px;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .reviews {
+    &-slider {
+      &-box {
+        width: auto;
+        overflow: hidden;
+
+        .swiper-slide-active {
+          transform: scale(1);
+        }
+      }
+    }
+
+    &-swiper {
+      &-button {
+        &-next {
+          right: 40px;
+        }
+
+        &-prev {
+          left: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  :root {
+    --fs-text-base: 14px;
+
+    --fs-title-xl: 50px;
+    --fs-title-lm: 30px;
+    --fs-title-lg: 30px;
+    --fs-title-sm: 20px;
+
+    --fs-text-sx: 12px;
+    --fs-text-sm: 12px;
+  }
+
+  .form {
+    padding: 0 15px;
+
+    &__input,
+    &__select {
+      padding: 15px 11px;
+    }
+
+    &__btn {
+      margin: 15px 0 15px
+    }
+
+    &-box {
+      padding: 30px 10px;
+      min-width: auto;
+      width: 100%;
+    }
+  }
+
+  .product-info {
+    padding-top: 18px;
+
+    &-title {
+      &-box {
+        --fs-text-lg: 18px;
+
+        margin-bottom: 10px;
+      }
+    }
+
+    &-top {
+      margin-bottom: 55px;
+
+      &__item {
+        &:first-child {
+          margin-bottom: 45px;
+        }
+      }
+
+      .quality-info {
+        flex-wrap: wrap;
+        max-width: 305px;
+        margin: 0 auto;
+
+        &__text {
+          margin-left: 10px;
+        }
+
+        &__item {
+          width: 45%;
+
+          &:first-child {
+            .quality-info__icon {
+              max-width: 45px;
+            }
+          }
+
+          &:nth-child(2) {
+            .quality-info__icon {
+              max-width: 28px;
+            }
+          }
+
+          &:last-child {
+            width: 100%;
+            margin-top: 18px;
+
+            .quality-info__icon {
+              max-width: 35px;
+            }
+          }
+        }
+      }
+    }
+
+    &-box {
+      &__item {
+        &:last-child {
+          margin-bottom: 45px;
+
+         .img-box {
+          max-width: 74%;
+         }
+        }
+      }
+
+      &-list {
+        margin-bottom: 60px;
+
+        &__decor {
+          min-width: 36px;
+        }
+      }
+    }
+
+    &__decor {
+      &_mobile-1 {
+        display: block;
+        right: 0;
+        top: 54%;
+        transform: translateY(-50%);
+      }
+
+      &_1 {
+        top: 15%;
+        left: -20px;
+        max-width: 85px;
+      }
+
+      &_2 {
+        top: 23.5%;
+        max-width: 175px;
+        right: -75px;
+      }
+    }
+  }
+
+  .disadvantages-obesity {
+    padding-top: 50px;
+
+    &__title {
+      margin-bottom: 15px;
+    }
+
+    &__subtitle {
+      --fs-text-ml: 14px;
+      margin: 0 auto 45px;
+    }
+
+    &-container {
+      &__title {
+        margin-bottom: 35px;
+      }
+    }
+
+    &-box {
+      margin-bottom: 23px;
+
+      &__flex {
+        padding: 0;
+      }
+
+      &-item {
+        margin-bottom: 18px;
+      }
+    }
+
+    &-addition {
+      &__item {
+        --fs-text-ml: 16px;
+      }
+
+      &__decor {
+        margin-bottom: 15px;
+        transform: rotate(165deg);
+
+        .img {
+          max-width: 165px;
+        }
+      }
+    }
+  }
+
+  .cause-obesity {
+    background: var(--bg-base);
+    padding: 55px 0 155px;
+
+    &__bg {
+      display: none;
+    }
+
+    &__title {
+      margin-bottom: 30px;
+    }
+  
+    &-box {
+      z-index: 2;
+
+      &__item {
+        &_2 {
+          max-height: 355px;
+
+          .img {
+            max-height: 100%;
+          }
+        }
+      }
+
+      &__decor {
+        top: 160px;
+
+        &_1 {
+          width: 82vw;
+          max-width: 354px;
+          height: 82vw;
+          max-height: 354px;
+        }
+
+        &_2 {
+          width: 70vw;
+          max-width: 310px;
+          height: 70vw;
+          max-height: 310px;
+        }
+
+        &_3 {
+          width: 60vw;
+          max-width: 258px;
+          height: 60vw;
+          max-height: 258px;
+        }
+      }
+    }
+    &-item {
+      &__number {
+        width: 58px;
+        height: 58px;
+
+        .img {
+          width: 58px;
+          height: 58px;
+        }
+      }
+
+      &__text {
+        width: calc(100% - 70px);
+      }
+    }
+
+    &__decor {
+      &_1 {
+        display: block;
+        transform: translate(0) rotate(195deg);
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        max-width: 220px;
+        z-index: 1;
+      }
+
+      &_mobile-1 {
+        display: block;
+        top: 40%;
+        right: 0;
+      }
+    }
+  }
+
+  .benefit-prod {
+    padding: 55px 0 30px;
+
+    &__size {
+      --fs-title-sx: 25px;
+
+      margin-top: 20px;
+    }
+
+    &__title {
+      margin-bottom: 17px;
+    }
+
+    &__subtitle {
+      margin-bottom: 45px;
+    }
+
+    &-list {
+      &-box {
+        margin-bottom: 42px;
+
+        &__title {
+          margin-bottom: 45px;
+        }
+      }
+
+      &-item {
+        margin-bottom: 20px;
+
+        &-icon {
+          width: 38px;
+          height: 38px;
+
+          &_img {
+            padding: 3px;
+          }
+        }
+
+        &__text {
+          --fs-text-md: 16px;
+          width: calc(100% - 75px);
+        }
+      }
+    }
+
+    &-text {
+      &-info {
+        &__link {
+          width: 100%;
+          max-width: 375px;
+          text-align: center;
+        }
+
+        &__content {
+          margin-bottom: 23px;
+        }
+      }
+    }
+
+    &-item {
+      &:first-child {
+        margin-bottom: 27px;
+      }
+    }
+  }
+
+  .structure-prod {
+    padding: 45px 0 70px;
+
+    &__title {
+      margin-bottom: 50px;
+    }
+
+    &-item {
+      &-info {
+        padding: 17px;
+      }
+
+      &__element {
+        font-size: 40px;
+      }
+
+      &_1 {
+        top: 265px;
+      }
+
+      &_3 {
+        right: 80px;
+        top: 53px;
+      }
+
+      &_4 {
+        right: 15px;
+        top: 145px;
+      }
+
+      &_5 {
+        right: 35px;
+        top: 310px;
+      }
+
+      &_6 {
+        left: 200px;
+        bottom: 32px;
+      }
+
+      &_7 {
+        left: 157px;
+      }
+    }
+
+    &__decor {
+      &_1 {
+        top: auto;
+        bottom: -110px;
+        margin: 0 auto;
+        right: 0;
+        left: 0;
+        display: block;
+        max-width: 187px;
+        transform: rotate(-55deg) translateX(20px);
+      }
+    }
+  }
+
+  .authoritative-opinion {
+    &-item {
+      &_2 {
+        width: calc(100% - 80px);
+        padding-left: 20px;
+      }
+    }
+  }
+
+  .method-application {
+    padding-top: 10px;
+
+    &-list {
+      padding: 9px 0;
+      margin-bottom: 25px;
+
+      span {
+        --fs-text-xl: 16px;
+      }
+    }
+
+    &-item {
+      &__decor {
+        max-width: 225px;
+        margin: 0 auto;
+      }
+
+      &_1 {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 370px;
+        width: 100%;
+      }
+    }
+  }
+
+  .reviews {
+    padding: 60px 0 267px;
+
+    &-text {
+      &-box {
+        &-item {
+          &__text {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    &-slider {
+      padding: 53px 15px 22px;
+    }
+
+    &-swiper {
+      &-button {
+        &-next,
+        &-prev {
+          transform: translateY(50%);
+        }
+      }
+    }
+  }
+
+  .advantages {
+    padding: 48px 0 0;
+
+    .form {
+      padding: 0 30px;
+
+      &__btn {
+        margin-top: 5px;
+      }
+    }
+
+    .price {
+      &__old {
+        margin-bottom: 8px;
+      }
+    }
+
+    &__title {
+      margin: 0 auto 37px;
+    }
+
+    &-box {
+      margin-bottom: 23px;
+    
+      &-item {
+        flex-wrap: nowrap;
+        flex-direction: row;
+        margin-bottom: 8px;
+      }
+
+      &__text {
+        display: block;
+        width: auto;
+        margin-left: 20px;
+        text-align: left;
+      }
+
+      &__img-box {
+        width: 75px;
+        height: 75px;
+        min-width: 75px;
+        min-height: 75px;
+
+        & > .img {
+          padding: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .structure-prod {
+    --fs-title-xl: 40px;
+    --fs-title-lg: 33px;
+    --fs-title-mx: 30px;
+
+    &-box {
+      width: 300px;
+    }
+
+    &-item {
+      &__element {
+        font-size: 30px;
+        padding: 10px;
+      }
+
+      &-info {
+        width: 80%;
+        max-width: 100%;
+      }
+
+      &_1 {
+        left: 2px;
+        top: 154px;
+      }
+  
+      &_2 {
+        left: 93px;
+        top: 85px;
+      }
+  
+      &_3 {
+        right: 48px;
+        top: 24px;
+      }
+  
+      &_4 {
+        right: 10px;
+        top: 85px;
+      }
+  
+      &_5 {
+        right: 22px;
+        top: 180px;
+      }
+  
+      &_6 {
+        left: 120px;
+        bottom: 18px;
+      }
+  
+      &_7 {
+        left: 95px;
+        bottom: 130px;
+      }
+    }
+  }
+
+  .pluses-prod {
+    padding-top: 78px;
+    background: url(../images/main/pluses-prod-mobile-bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &-box {
+      &-item {
+        &_2 {
+          max-width: 330px;
+          margin-bottom: 35px;
+        }
+
+        &_1,
+        &_3 {
+          padding: 0 5px;
+        }
+
+        &_1 {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+
+  .authoritative-opinion {
+    padding-bottom: 15px;
+  
+    &__title {
+      top: 55px;
+    }
+
+    &__postscript {
+      --fs-text-ml: 16px;
+      
+      max-width: 302px;
+      margin-top: 10px;
+    }
+
+    &-box {
+      padding-top: 70px;
+    }
+
+    &-item {
+      &_1 {
+        max-width: 315px;
+      }
+
+      &_2 {
+        width: 100%;
+        padding-left: 0;
+      }
+
+      &-box {
+        padding: 42px 0 23px 45px;
+        margin-bottom: 24px;
+        width: calc(100% - 55px);
+
+        &::after,
+        &::before {
+          width: 110%;
+        }
+
+        &::before {
+          left: 2px;
+        }
+
+        &::after {
+          left: 18px;
+        }
+
+        &__text:not(:last-child) {
+          margin-bottom: 28px;
+        }
+      }
+    }
+  }
+
+  .reviews {
+    &-swiper {
+      &-button {
+        &-next {
+          right: 0px;
+        }
+
+        &-prev {
+          left: 0px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .structure-prod {
+    padding-bottom: 30px;
+
+    &-box {
+      transform: translateX(-3vw);
+    }
+  }
+
+  .cause-obesity {
+    &-box {
+      &__item_2 {
+        max-height: none;
+        height: auto;
+
+        .img {
+          width: 100%;
+          max-width: 250px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 340px) {
+  :root {
+    --fs-title-xl: 40px;
+  }
+
+  .product-info {
+    &-top {
+      .quality-info {
+        &__item {
+          &:not(:first-child) {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}

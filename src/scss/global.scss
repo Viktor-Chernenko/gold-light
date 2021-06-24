@@ -1,0 +1,348 @@
+*,
+::after,
+::before {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    -ms-overflow-style: scrollbar;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-fam-base);
+    font-size: var(--fs-text-base);
+    font-weight: normal;
+    color: var(--color-base);
+    background: var(--bg-base);
+    overflow-x: hidden;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-size: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a,
+button {
+    outline: none;
+    color: var(--color-base);
+}
+
+button,
+select {
+    cursor: pointer;
+}
+
+.wrap {
+    width: 100%;
+    max-width: var(--wrap-max-width-base);
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+// === btn ===
+
+.btn {
+    border: none;
+}
+
+// === link ===
+
+.link {
+}
+
+// === text ===
+
+.fw-regular {
+    font-weight: 400;
+}
+
+.fw-medium {
+    font-weight: 500;
+}
+
+.fw-semi-bold {
+    font-weight: 600;
+}
+
+.fw-bold {
+    font-weight: 700;
+}
+
+.fw-black {
+    font-weight: 900;
+}
+
+.fw-italic {
+    font-style: italic;
+}
+
+.ta-center {
+    text-align: center;
+}
+
+.tt-uppercase {
+    text-transform: uppercase;
+}
+
+// === list ===
+
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    &__item {
+        margin-bottom: 10px;
+    }
+}
+
+// === form ===
+
+.form {
+    padding: 0 43px;
+    width: 100%;
+
+    &-box {
+        max-width: 478px;
+        padding: 35px 30px;
+        min-width: 400px;
+
+        &__title {
+            margin-bottom: 15px;
+        }
+
+        &__subtitle {
+            margin-bottom: 10px;
+        }
+
+        &__date {
+            position: relative;
+            border-radius: 50px;
+            padding: 11px 35px;
+            margin-bottom: 15px;
+        }
+    }
+
+    &-item {
+        margin-bottom: 7px;
+        border-radius: 5px;
+
+        &_select {
+            position: relative;
+
+            &-decor {
+                position: absolute;
+                width: 10px;
+                height: 20px;
+                right: 11px;
+                top: 50%;
+                transform: translateY(-50%) rotate(-90deg);
+                font-weight: bold;
+                color: #000;
+            }
+
+            &:before {
+                position: absolute;
+                left: 0;
+                top: 0;
+                background: var(--bg-base);
+                width: 100%;
+                height: 100%;
+                content: '';
+                border-radius: 5px;
+            }
+        }
+    }
+
+    &__input,
+    &__select {
+        width: 100%;
+        padding: 13px 11px;
+        border: 1px solid #2C2C2C;
+        border-radius: 5px;
+        outline: none !important;
+        box-shadow: 0 0 3px 0 transparent;
+        transition: .2s linear;
+        background: transparent;
+
+        &::placeholder {
+            color: #000;
+        }
+
+        &:focus,
+        &:active {
+            box-shadow: 0 0 3px 0 #000;
+        }
+    }
+
+    &__input {
+        background: var(--bg-base);
+    }
+
+    &__select {
+        position: relative;
+        appearance: none;
+    }
+
+    &__btn {
+        padding: 12px 20px;
+        margin: 20px 0 10px;
+        width: 100%;
+        border-radius: 50px;
+    }
+}
+
+// === nav ===
+
+.nav {
+    max-width: 690px;
+    width: 100%;
+    margin-left: 50px;
+
+    &__item {
+        margin-left: auto;
+    }
+}
+
+// === flex ===
+
+.d-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-start {
+    justify-content: flex-start;
+}
+
+.align-stretch {
+    align-items: stretch;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+.grow-1 {
+    flex-grow: 1;
+}
+
+// === other ===
+
+.w-50 {
+    width: 50%;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-inline-block {
+    display: inline-block;
+}
+
+.m-null-auto {
+    margin: 0 auto;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.mt-auto {
+    margin-top: auto;
+}
+
+.mr-auto {
+    margin-right: auto;
+}
+
+.mb-auto {
+    margin-bottom: auto;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+.icon-hidden {
+    display: none;
+}
+
+.logo {
+    max-width: 200px;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.icon-box {
+    .icon {
+        width: 100%;
+    }
+}
+
+.price {
+    margin-bottom: 10px;
+
+    &__old {
+        position: relative;
+        margin-bottom: 12px;
+
+        &::before {
+            position: absolute;
+            background: var(--color-5);
+            width: 150%;
+            height: 3px;
+            left: -25%;
+            top: 50%;
+            transform: translateY(-50%) rotate(-8deg);
+            content: '';
+        }
+    }
+}

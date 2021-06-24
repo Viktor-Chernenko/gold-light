@@ -1,0 +1,102 @@
+$color: (
+    base: #407690,
+    1: #fff,
+    2: #000,
+    3: #1E5E7D,
+    4: #289BDB,
+    5: #DE0011,
+    6: #DAED04,
+    7: #D73AB4,
+    8: #A5A5A5,
+    9: #B2DE00,
+    10: #616161,
+    11: #5A8899,
+    12: #7A9CAD,
+    13: #A5A5A5,
+);
+
+$bg: (
+    base: #fff,
+    1: #69BAD3,
+    2: rgba(255, 255, 255, 0.7),
+    3: #2A8D2F,
+    4: #85C0D2,
+    5: #45B6D4,
+    6: #C8C8C8,
+    7: #4A626D,
+    8: #C8C8C8,
+
+    gradient-1: linear-gradient(180deg, #FCFCFC 0%, #E0E4E9 100%),
+    gradient-2:  linear-gradient(to right, rgba(59,143,143,1) 0%, rgba(59,143,143,1) 0%, rgba(165,228,228,1) 100%),
+    gradient-3: radial-gradient(50% 50% at 50% 50%, #FFFFFF 45.83%, rgba(255, 255, 255, 0) 100%),
+
+);
+
+$fs: (
+    text-base: 16px,
+
+    title-xl: 80px,
+    title-lm: 70px,
+    title-lg: 60px,
+    title-md: 50px,
+    title-sx: 40px,
+    title-sm: 30px,
+
+    text-xl: 25px,
+    text-lg: 22px,
+    text-md: 20px,
+    text-ml: 18px,
+    text-sx: 14px,
+    text-sm: 12px,
+);
+
+$fontFam: (
+    base: ('SF Pro Display', 'sans-serif'),
+    1: ('Ranga', 'cursive'),
+);
+
+:root {
+    --wrap-max-width-base: 1230px;
+
+    @each $name, $colorValue in $color {
+        --color-#{$name}: #{$colorValue};
+    }
+
+    @each $name, $value in $fontFam {
+        --font-fam-#{$name}: #{$value};
+    }
+
+    @each $name, $value in $fs {
+        --fs-#{$name}: #{$value};
+    }
+
+    @each $name, $value in $bg {
+        --bg-#{$name}: #{$value};
+    }
+}
+
+// class
+
+@each $name, $value in $color {
+    .color-#{$name} {
+        color: var(--color-#{$name});
+    } 
+}
+
+@each $name, $value in $fontFam {
+    .font-fam-#{$name} {
+        font-family: var(--font-fam-#{$name});
+    }
+}
+
+@each $name, $value in $fs {
+    .#{$name} {
+        font-size: var(--fs-#{$name});
+    }
+}
+
+@each $name, $value in $bg {
+    .bg-#{$name} {
+        background: var(--bg-#{$name});
+    }
+}
